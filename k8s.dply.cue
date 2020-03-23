@@ -37,7 +37,7 @@ persistentVolumeClaim <Name>: {
 	apiVersion: *"v1" | string
 	kind: "PersistentVolumeClaim"
 	metadata name: *"pv-claim-\(Name)" | string
-	spec accessModes: ["ReadWriteMany"]
+	spec accessModes: ["ReadWriteOnce"]
 	spec resources requests storage: *"10Gi" | string
 }
 
